@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fundamental of java</title>
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Spinner Start -->
+    <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> -->
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start --><div class="aligndiv">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary">Java SEA</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+
+        </div>
+    </nav>
+</div>
+    <!-- Navbar End -->
+
+<main class="fundamental-page">
+   <div class="topic-navigation">   
+   </div><div>
+   <div class="topic-content">
+      <div class="topic-navigation">
+         <div class="topic-content">
+       <div class="contentall">
+        <div>
+    <h2  class="head">About Java</h2>
+    <p><b>Java </b> is a high-level, object-oriented programming language originally developed by Sun Microsystems.
+       It is known for its "write once, run anywhere" (WORA) philosophy, which means Java code can be 
+       executed on any platform that has a Java Virtual Machine (JVM). Java is widely used in web 
+       development, mobile app development, enterprise software, and more.</p>
+  </div></div>
+  <div class="group">
+    <div class="contentallcontent">
+        <div>
+    <h4 class="headcontent">Contents-Part I</h4>
+    <summary><b>Basic</b></summary>
+    <ul>
+      <li>Features <input type="checkbox" name="agree" value="yes"></li> 
+      <li>JVM JRE KDK <input type="checkbox" name="agree" value="yes"></li>
+      <li>INSTALL JAVA <input type="checkbox" name="agree" value="yes"></li>
+    </ul>
+ 
+    <summary><b>Basic Part II</b></summary>
+    <ul>
+      <li>Variables<input type="checkbox" name="agree" value="yes"></li> 
+      <li>Data Typpes<input type="checkbox" name="agree" value="yes"></li>
+      <li>Operators<input type="checkbox" name="agree" value="yes"></li>
+       <li>Keywords<input type="checkbox" name="agree" value="yes"></li>
+    </ul>
+
+    <summary><b>Control Statements</b></summary>
+    <ul>
+      <li>What is Control Statement?<input type="checkbox" name="agree" value="yes"></li> 
+      <li>if-else Condition<input type="checkbox" name="agree" value="yes"></li>
+      <li>Switch Statement in java<input type="checkbox" name="agree" value="yes"></li>
+    </ul>
+
+  
+    <summary><b>Loops in Java</b></summary>
+    <ul>
+      <li> For Loop <input type="checkbox" name="agree" value="yes"></li> 
+      <li>While Loop <input type="checkbox" name="agree" value="yes"></li>
+      <li>Do while loop<input type="checkbox" name="agree" value="yes"></li>
+    </ul>
+
+    
+  </div>     
+       </div>
+       <div class="contentallcontent2">
+        <div>
+    <h5  class="head">Basic Part II</h5>
+   <h5><b> Program to display all operators</b></h5><hr>
+
+  <pre>
+public class AllOperatorsExample {
+    public static void main(String[] args) {
+        // Arithmetic Operators
+        int a = 10, b = 5;
+        System.out.println("Arithmetic Operators:");
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a * b = " + (a * b));
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a % b = " + (a % b));
+
+        // Assignment Operators
+        int c = 15;
+        c += 3;
+        System.out.println("\nAssignment Operators:");
+        System.out.println("c += 3 (c = c + 3) => c = " + c);
+
+        // Increment and Decrement Operators
+        int d = 7;
+        System.out.println("\nIncrement and Decrement Operators:");
+        System.out.println("d++ (Post-increment) => d = " + d++);
+        System.out.println("++d (Pre-increment) => d = " + ++d);
+        System.out.println("d-- (Post-decrement) => d = " + d--);
+        System.out.println("--d (Pre-decrement) => d = " + --d);
+
+        // Relational Operators
+        System.out.println("\nRelational Operators:");
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a != b: " + (a != b));
+        System.out.println("a &lt; b: " + (a &lt; b));
+        System.out.println("a &gt; b: " + (a &gt; b));
+        System.out.println("a &lt;= b: " + (a &lt;= b));
+        System.out.println("a &gt;= b: " + (a &gt;= b));
+
+        // Logical Operators
+        boolean x = true, y = false;
+        System.out.println("\nLogical Operators:");
+        System.out.println("x &amp;&amp; y: " + (x &amp;&amp; y));
+        System.out.println("x || y: " + (x || y));
+        System.out.println("!x: " + !x);
+        System.out.println("!y: " + !y);
+
+        // Bitwise Operators
+        int num1 = 5, num2 = 3;
+        System.out.println("\nBitwise Operators:");
+        System.out.println("num1 & num2: " + (num1 & num2));
+        System.out.println("num1 | num2: " + (num1 | num2));
+        System.out.println("num1 ^ num2: " + (num1 ^ num2));
+        System.out.println("~num1: " + (~num1));
+        System.out.println("num1 &lt;&lt; 1: " + (num1 &lt;&lt; 1));
+        System.out.println("num1 &gt;&gt; 1: " + (num1 &gt;&gt; 1));
+        System.out.println("num1 &gt;&gt;&gt; 1: " + (num1 &gt;&gt;&gt; 1));
+
+        // Conditional Operator (Ternary Operator)
+        int age = 25;
+        String status = (age &gt;= 18) ? "Adult" : "Minor";
+        System.out.println("\nConditional Operator (Ternary Operator):");
+        System.out.println("Status: " + status);
+    }
+}
+  </pre><hr>
+   
+  
+  
+    <input type="button" name="" id="button1" class="button" value="Next">
+    <input type="button" name="" id="button1" class="button" value="Prev">
+
+  </div></div>
+   </div>
+   </div>
+</div>
+</div>
+</main>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Test Your Achivements</h4>
+                    <a class="btn btn-link" href="">QUIZ</a>
+                    <a class="btn btn-link" href="">Java Compiler</a>
+                    <a class="btn btn-link" href="">Personal Tutor</a>
+                    <a class="btn btn-link" href="">Advance JAVA</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>BICTE Balkumari college</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>98......</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>rewatipoudel332@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/subash.poudel.5623"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://studio.youtube.com/channel/UCOQ5YujOaJs8fz8Qlm1xexQ/videos/upload?filter=%5B%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+    <span class="card__title">Comming Soon</span>
+    <p class="card__content">Get your own java compiler here, Explore the real time problem.
+
+    </p>
+    <div class="card__form">
+
+        <button class="Click"> Click Here</button>
+    </div>
+</div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Please Provide Feedback</h4>
+                    <p>We feel more than happy to searve you</p>
+                    <p> Be updated with the current challanges and problems </div>
+
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Java Sea</a>, All Right Reserved.
+
+                        Designed By <a class="border-bottom" href="https://www.facebook.com/subash.poudel.5623">BICTE TEAM</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <button class="footer-menu">
+                            <a href="index.html">HOME</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="fundamental.js"></script>
+</body>
+</html>
